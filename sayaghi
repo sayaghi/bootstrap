@@ -1,0 +1,382 @@
+<html>
+ <head> 
+  <title>سياغي الجومريلخدمات الشبكات والبرمجيات</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"> 
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+  <!-- Custom Theme files --> 
+  <link href="css/style.css" rel="stylesheet" type="text/css"> 
+  <link href="css/font-awesome.css" rel="stylesheet"> 
+  <!-- Mainly scripts --> 
+  <!-- Custom and plugin javascript --> 
+  <link href="css/custom.css" rel="stylesheet"> 
+  <script>
+		$(function () {
+			$('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
+
+			if (!screenfull.enabled) {
+				return false;
+			}
+
+			
+
+			$('#toggle').click(function () {
+				screenfull.toggle($('#container')[0]);
+			});
+			
+
+			
+		});
+		</script> 
+  <!----> 
+  <script type="text/javascript">
+ $(document).ready(function(){
+ $('#main').html("<center> <img border='0' src='images/loading.gif' style='margin-top:10%; margin-bottom:10%;'/> </center>");
+ $('#main').load('status.php');
+ });
+ function menu(pg){
+ document.getElementById("mybut").click();
+ $('#main').html("<center> <img border='0' src='images/loading.gif' style='margin-top:10%; margin-bottom:10%;'/> </center>");
+ $('#main').load(pg+'.php');
+ }
+</script> 
+  <!--pie-chart---> 
+  <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#demo-pie-1').pieChart({
+                barColor: '#3bb2d0',
+                trackColor: '#eee',
+                lineCap: 'round',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-2').pieChart({
+                barColor: '#fbb03b',
+                trackColor: '#eee',
+                lineCap: 'butt',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-3').pieChart({
+                barColor: '#ed6498',
+                trackColor: '#eee',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+           
+        });
+
+    </script> 
+  <!--skycons-icons--> 
+  <!--//skycons-icons--> 
+  <!-- Global site tag (gtag.js) - Google Analytics --> 
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-67539278-5');
+</script> 
+ </head> 
+ <body> 
+  <div id="wrapper"> 
+   <!----> 
+   <nav class="navbar-default navbar-static-top" role="navigation"> 
+    <div class="navbar-header"> 
+     <button type="button" id="mybut" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+     <h1> <a class="navbar-brand" href="index.php">ماكس ابجريد</a></h1> 
+    </div> 
+    <div class=" border-bottom"> 
+     <div class="full-left"> 
+      <section class="full-top"> 
+       <button id="toggle"><i class="fa fa-arrows-alt"></i></button> 
+      </section> 
+      <form class=" navbar-left-right"> 
+       <input type="text" value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}"> 
+       <input type="submit" value="" class="fa fa-search"> 
+      </form> 
+      <div class="clearfix"> 
+      </div> 
+     </div> 
+     <!-- Brand and toggle get grouped for better mobile display --> 
+     <!-- Collect the nav links, forms, and other content for toggling --> 
+     <div class="drop-men"> 
+      <ul class=" nav_1"> 
+       <li class="dropdown at-drop"> <a href="#" class="dropdown-toggle dropdown-at " data-toggle="dropdown"><i class="fa fa-envelope"></i> <span class="number">0</span></a> 
+        <ul class="dropdown-menu menu1 " role="menu"> 
+         <li><a class="view">لديك 0 رسائل غير مقروءة </a></li> 
+         <li><a onclick="menu('inbox');" class="view">اقرأ جميع الرسائل</a></li> 
+        </ul> </li> 
+       <li class="dropdown at-drop"> <a href="#" class="dropdown-toggle dropdown-at " data-toggle="dropdown"><i class="fa fa-globe"></i> <span class="number">0</span></a> 
+        <ul class="dropdown-menu menu1 " role="menu"> 
+         <li><a href="#" class="view">View all messages</a></li> 
+        </ul> </li> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">سياغي محمد احمد نقيب الجومري<i class="caret"></i></span><img src="cuspictures/photo.png" style="width:60px;"></a> 
+        <ul class="dropdown-menu " role="menu"> 
+         <li><a onclick="menu('profile');"><i class="fa fa-user"></i>Edit Profile</a></li> 
+         <li><a onclick="menu('inbox');"><i class="fa fa-envelope"></i>Inbox</a></li> 
+         <li><a href="login.php?do=logout"><i class="fa fa-sign-out"></i>تسجيل الخروج</a></li> 
+        </ul> </li> 
+      </ul> 
+     </div>
+     <!-- /.navbar-collapse --> 
+     <div class="clearfix"> 
+     </div> 
+     <div class="navbar-default sidebar" role="navigation"> 
+      <div class="sidebar-nav navbar-collapse collapse"> 
+       <ul class="nav in" id="side-menu"> 
+        <li> <a onclick="menu('status');" class="hvr-bounce-to-right active"><i class="fa fa-home nav_icon "></i><span class="nav-label">Home</span> </a> </li> 
+        <li> <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-indent nav_icon"></i> <span class="nav-label">الشبكة</span><span class="fa arrow"></span></a> 
+         <ul class="nav nav-second-level collapse"> 
+          <li><a href="#" onclick="menu('network_setting');" class=" hvr-bounce-to-right"> <i></i><i class="fa fa-cog nav_icon"></i>اعدادات</a></li> 
+          <li><a href="#" onclick="menu('profiles');" class=" hvr-bounce-to-right"><i></i><i class="fa fa-file-text-o nav_icon"></i>الباقات</a></li> 
+          <li><a href="#" onclick="menu('sellers');" class=" hvr-bounce-to-right"><i></i><i class="fa fa-map-marker nav_icon"></i>نقاط البيع</a></li> 
+         </ul> </li> 
+        <li> <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-glass nav_icon"></i> <span class="nav-label">المسابقات</span><span class="fa arrow"></span></a> 
+         <ul class="nav nav-second-level collapse"> 
+          <li><a href="#" onclick="menu('contest_setting');" class=" hvr-bounce-to-right"> <i></i><i class="fa fa-cog nav_icon"></i>اعدادات</a></li> 
+          <li> <a href="#" class=" hvr-bounce-to-right"><i></i><i class="fa fa-credit-card nav_icon"></i> <span class="nav-label">الكروت</span><span class="fa arrow"></span></a> 
+           <ul class="nav nav-second-level collapse"> 
+            <li><a href="#" onclick="menu('cardset');" class=" hvr-bounce-to-right"> <i></i><i></i><i class="fa fa-cog nav_icon"></i>اعدادات الباقات</a></li> 
+            <li><a href="#" onclick="menu('addcards');" class=" hvr-bounce-to-right"><i></i><i></i><i class="fa fa-credit-card nav_icon"></i>اضافة كروت</a></li> 
+            <li><a href="#" onclick="menu('filescards');" class=" hvr-bounce-to-right"><i></i><i></i><i class="fa fa-folder nav_icon"></i>الملفات</a></li> 
+           </ul> </li> 
+          <li><a href="#" onclick="menu('addq');" class=" hvr-bounce-to-right"><i></i><i class="fa fa-question nav_icon"></i>الاسئلة</a></li> 
+          <li><a href="#" onclick="menu('contestlog');" class=" hvr-bounce-to-right"><i></i><i class="fa fa-file-text-o nav_icon"></i>Log</a></li> 
+         </ul> </li> 
+        <li> <a href="#" onclick="menu('inbox');" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">الرسائل</span> </a> </li> 
+        <li> <a href="#" onclick="menu('notification');" class=" hvr-bounce-to-right"><i class="fa fa-bell nav_icon"></i> <span class="nav-label">التنبيهات</span> </a> </li> 
+        <li><a href="#" onclick="menu('users');" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i>Users</a></li> 
+        <li><a href="#" onclick="menu('AP_info');" class="hvr-bounce-to-right"><i class="fa fa-signal nav_icon"></i>اجهزة البث</a></li> 
+        <li><a href="#" onclick="menu('createpage');" class="hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i>تصميم صفحة Hotspot</a></li> 
+        <li> <a href="#" class="hvr-bounce-to-right"><i class="fa fa-lock nav_icon"></i> <span class="nav-label">حماية سرقة الماكات</span><span class="fa arrow"></span></a> 
+         <ul class="nav nav-second-level collapse"> 
+          <li><a href="#" onclick="menu('macpro_settings');" class=" hvr-bounce-to-right"> <i></i><i class="fa fa-cog nav_icon"></i>اعدادات</a></li> 
+          <li><a href="#" onclick="menu('macpro_lesses');" class=" hvr-bounce-to-right"><i></i><i class="fa fa-user nav_icon"></i>المستخدمين</a></li> 
+          <li><a href="#" onclick="menu('macpro_log');" class=" hvr-bounce-to-right"><i></i><i class="fa fa-file-text-o nav_icon"></i>Log</a></li> 
+         </ul> </li> 
+        <li><a href="#" onclick="menu('commonq');" class="hvr-bounce-to-right"><i class="fa fa-question nav_icon"></i>اسئلة شائعة</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+   </nav> 
+   <div id="page-wrapper" class="gray-bg dashbard-1" style="min-height: 522px;"> 
+    <div class="content-main"> 
+     <div id="main"> 
+      <link rel="stylesheet" href="css/graph.css"> 
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+      <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#demo-pie-1').pieChart({
+                barColor: '#3bb2d0',
+                trackColor: '#eee',
+                lineCap: 'round',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-2').pieChart({
+                barColor: '#fbb03b',
+                trackColor: '#eee',
+                lineCap: 'butt',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-3').pieChart({
+                barColor: '#ed6498',
+                trackColor: '#eee',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+           
+        });
+
+    </script> 
+      <!--banner--> 
+      <div class="banner"> 
+       <h2> <a href="index.html">Home</a> <i class="fa fa-angle-right"></i> <span>Status</span> </h2> 
+      </div> 
+      <!--//banner--> 
+      <!--content--> 
+      <div class="content-top"> 
+       <div class="col-md-4 "> 
+        <div class="content-top-1"> 
+         <div class="col-md-6 top-content"> 
+          <h5>عدد الكروت</h5> 
+          <label>0</label> 
+         </div> 
+         <div class="col-md-6 top-content1"> 
+          <div id="demo-pie-1" class="pie-title-center" data-percent="0"> 
+           <span class="pie-value">0%</span> 
+           <canvas height="100" width="100"></canvas>
+          </div> 
+         </div> 
+         <div class="clearfix"> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="col-md-4 "> 
+        <div class="content-top-1"> 
+         <div class="col-md-6 top-content"> 
+          <h5>عدد الرسائل</h5> 
+          <label>0</label> 
+         </div> 
+         <div class="col-md-6 top-content1"> 
+          <div id="demo-pie-2" class="pie-title-center" data-percent="0"> 
+           <span class="pie-value">0%</span> 
+           <canvas height="100" width="100"></canvas>
+          </div> 
+         </div> 
+         <div class="clearfix"> 
+         </div> 
+        </div>
+       </div> 
+       <div class="col-md-4 "> 
+        <div class="content-top-1"> 
+         <div class="col-md-6 top-content"> 
+          <h5>عدد الاسئلة</h5> 
+          <label>0</label> 
+         </div> 
+         <div class="col-md-6 top-content1"> 
+          <div id="demo-pie-3" class="pie-title-center" data-percent="0"> 
+           <span class="pie-value">0%</span> 
+           <canvas height="100" width="100"></canvas>
+          </div> 
+         </div> 
+         <div class="clearfix"> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="clearfix"> 
+       </div> 
+      </div> 
+      <!--//content--> 
+      <div class="content-top"> 
+       <div class="col-md-6 "> 
+        <div class="content-top-1"> 
+         <div class="col-md-6 top-content"> 
+          <h5>المتسابقين اليوم</h5> 
+          <label>0</label> 
+         </div> 
+         <div class="col-md-6 top-content1"> 
+          <div class="pie-title-center" data-percent="25"> 
+           <span class="pie-value"></span> 
+          </div> 
+         </div> 
+         <div class="clearfix"> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="col-md-6 "> 
+        <div class="content-top-1"> 
+         <div class="col-md-6 top-content"> 
+          <h5>الفائزين اليوم</h5> 
+          <label>0</label> 
+         </div> 
+         <div class="col-md-6 top-content1"> 
+          <div id="demo-pie-2" class="pie-title-center" data-percent="50"> 
+           <span class="pie-value"></span> 
+          </div> 
+         </div> 
+         <div class="clearfix"> 
+         </div> 
+        </div>
+       </div> 
+       <div class="clearfix"> 
+       </div> 
+      </div> 
+      <div class="banner"> 
+       <h2><a target="_blank" href="https://play.google.com/store/apps/details?id=com.wi_fa.wifag">رابط التطبيق من متجر بلاي</a></h2> 
+       <h2>https://play.google.com/store/apps/details?id=com.wi_fa.wifag</h2>
+       <br> 
+       <h2><a target="_blank" href="http://www.wi-fa.org/wifag.apk">تحميل ملف التطبيق apk</a></h2> 
+       <h2>http://www.wi-fa.org/wifag.apk</h2>
+       <br> 
+       <div class="clearfix"> 
+       </div> 
+      </div> 
+      <br> 
+      <div class="banner"> 
+       <h2>فديو شرح تفعيل التطبيق الجزء الأول</h2>
+       <br> 
+       <iframe allowfullscreen class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/Fs3_TAacRMw/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/Fs3_TAacRMw?feature=player_embedded" width="320"></iframe>
+       <br> 
+       <div class="clearfix"> 
+       </div> 
+      </div> 
+      <br> 
+      <div class="banner"> 
+       <h2>فديو شرح تفعيل التطبيق الجزء الثاني</h2>
+       <br> 
+       <iframe allowfullscreen class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/3hWLtdXPfi0/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/3hWLtdXPfi0?feature=player_embedded" width="320"></iframe>
+       <br> 
+       <div class="clearfix"> 
+       </div> 
+      </div> 
+      <br> 
+      <!----> 
+     </div> 
+     <div class="outter-wp2"> 
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;"> 
+       <div class="modal-dialog"> 
+        <div class="modal-content"> 
+         <div class="modal-header"> 
+          <button type="button" class="close second" data-dismiss="modal" aria-hidden="true">×</button> 
+          <h2 class="modal-title">الرسائل</h2> 
+         </div> 
+         <!-- --> 
+         <div class="scrollbar" id="style-2"> 
+         </div> 
+         <div class="chat-bottom"> 
+          <form method="post" action="messgsend.php"> 
+           <input type="text" name="mess" placeholder="رد" required> 
+           <input type="submit" name="send" value="إرسال"> 
+          </form> 
+         </div> 
+         <!-- --> 
+         <div class="modal-footer"> 
+         </div> 
+        </div>
+        <!-- /.modal-content --> 
+       </div>
+       <!-- /.modal-dialog --> 
+      </div> 
+     </div> 
+     <!----> 
+     <div class="copy"> 
+      <p> © 2020| Programing by <a href="http://sayaghi-.com/" target="_blank">sayaghi Al-Aljomri</a> </p> 
+     </div> 
+    </div> 
+    <div class="clearfix"> 
+    </div> 
+   </div> 
+  </div> 
+  <!----> 
+  <!--scrolling js--> 
+  <!--//scrolling js--> 
+ </body>
+</html>
